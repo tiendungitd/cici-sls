@@ -3,9 +3,8 @@ phases:
   install:
     commands:
       - echo Installing serverless
-      - npm install
-      - npm install -g mocha
       - npm install -g serverless
+      - npm install serverless-offline -g
   pre_build:
     commands:
       - echo install source npm dependencies
