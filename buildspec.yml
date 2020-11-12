@@ -1,5 +1,11 @@
 version: 0.2
 phases:
+  install:
+    commands:
+      - echo Installing serverless
+      - npm install
+      - npm install -g mocha
+      - npm install -g serverless
   pre_build:
     commands:
       - echo install source npm dependencies
